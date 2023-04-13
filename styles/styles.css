@@ -1,0 +1,460 @@
+/* Reseteo de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---Fondo de la pagina---*/
+body {
+    background-color: rgb(12, 12, 12);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* ======================= HEADER ======================= */
+header {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-flow: wrap row;
+    color: white;
+    background-color: crimson;
+    gap: 20px;
+
+}
+
+.menu li {
+    color: white;
+    padding: 10px;
+    background-color: crimson;
+}
+
+.menu li a {
+    color: white;
+}
+
+.menu li a:hover {
+    background-color: #fff;
+    color: black;
+    position: relative;
+    padding: 10px;
+}
+
+/* ======================= MAIN ======================= */
+
+/* ---- CARRUSEL DE PROYECTOS ---- */
+/* Todavia no se hacer un carrusel asi que la imagen es representaviva. En un futuro cada imagen llevaria a su seccion en el apartado de proyectos del sitio web*/
+.carrusel {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 175px;
+    gap: 10px;
+    font-size: 0.8em;
+}
+
+.carrusel img {
+    border: white 4px solid;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ---- Seccion de servicios ---- */
+.servicios {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.servicios-titulo {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-web {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.tarjeta-web-img {
+    width: 100%;
+    padding: 10px;
+}
+
+.tarjeta-web div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.tarjeta-python {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-python-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-python div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+/* ======================= FOOTER ======================= */
+.footer-menu {
+    background-color: rgb(199, 19, 55);
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: #fff 1px solid;
+}
+
+.footer-menu a {
+    color: #fff;
+
+}
+
+/* Formulario */
+form {
+    width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 180px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #006080;
+}
+
+/* Seccion proyectos */
+.biblioteca-titulo {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: crimson;
+    padding: 10px;
+}
+
+.proyectos {
+    display: flex;
+    flex-flow: column;
+    gap: 60px;
+}
+
+.proyecto1 {
+    width: 75%;
+    text-align: justify;
+}
+
+.proyecto1-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto1 h2 {
+    margin-bottom: 30px;
+}
+
+.proyecto2 {
+    width: 75%;
+    text-align: justify;
+}
+
+.proyecto2-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto2 h2 {
+    margin-bottom: 30px;
+}
+
+.proyecto3 {
+    width: 75%;
+    text-align: justify;
+}
+
+.proyecto3-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto3 h2 {
+    margin-bottom: 30px;
+}
+
+/* Testimonios */
+.testimonios {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 100px;
+    gap: 255px;
+}
+
+.tarjeta-testimonio1 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.tarjeta-testimonio1-img {
+    width: 100%;
+    padding: 10px;
+    height: 65%;
+}
+
+.tarjeta-testimonio1 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-testimonio2 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-testimonio2-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-testimonio2 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-testimonio3 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-testimonio3-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-testimonio3 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-testimonio4 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-testimonio4-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-testimonio4 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-testimonio5 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-testimonio5-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-testimonio5 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.tarjeta-testimonio6 {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-testimonio6-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+
+}
+
+.tarjeta-testimonio6 div {
+    height: 35%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.info-personal {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cv iframe {
+    height: 480px;
+    width: 300px;
+    margin-left: 80%;
+    margin-top: 30%;
+}
+
+.perfil-laboral {
+    margin-top: 100px;
+    margin-right: 300px;
+    width: 30%;
+}
+
+.perfil-laboral h2 {
+    margin-bottom: 50px;
+}
