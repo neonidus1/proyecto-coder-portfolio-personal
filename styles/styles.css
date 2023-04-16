@@ -106,16 +106,17 @@ h2 {
 .tarjeta-web-img {
     width: 100%;
     padding: 10px;
+    margin-bottom: 25px;
 }
 
 .tarjeta-web div {
     height: 35%;
-    padding: 5px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+   
 }
 
 .tarjeta-python {
@@ -131,17 +132,17 @@ h2 {
     padding: 10px;
     margin-left: 25%;
     margin-right: auto;
+    margin-bottom: 20px;
 
 }
 
 .tarjeta-python div {
     height: 35%;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 /* ======================= FOOTER ======================= */
