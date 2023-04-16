@@ -75,6 +75,10 @@ header {
 .carrusel img {
     border: white 4px solid;
     border-radius: 15px;
+    height: 400px;
+    width: 650px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
 h2 {
