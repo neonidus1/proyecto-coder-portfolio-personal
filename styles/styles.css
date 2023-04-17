@@ -21,47 +21,212 @@ body {
 }
 
 /* ======================= HEADER ======================= */
-header {
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    align-items: center;
-    background-color: crimson;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.menu-hamburguesa{
+    display: none;
+}
+/* Responsive computadoras */
+
+@media (min-width: 960px) {
+    
+
+
+    .nav-bar {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        background-color: crimson;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: wrap row;
+        color: white;
+        background-color: crimson;
+        gap: 20px;
+
+    }
+
+    .menu li {
+        color: white;
+        padding: 10px;
+        background-color: crimson;
+    }
+
+    .menu li a {
+        color: white;
+    }
+
+    .menu li a:hover {
+        background-color: #fff;
+        color: black;
+        position: relative;
+        padding: 10px;
+    }
+    .footer-menu {
+        background-color: rgb(199, 19, 55);
+        margin-top: 500px;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        border: #fff 1px solid;
+    }
+    
+    .footer-menu a {
+        color: #fff;
+    
+    }
+}
+/* Responsive tablets */
+
+@media (min-width: 568px) {
+    
+
+
+    .nav-bar {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        background-color: crimson;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: wrap row;
+        color: white;
+        background-color: crimson;
+        gap: 20px;
+
+    }
+
+    .menu li {
+        color: white;
+        padding: 10px;
+        background-color: crimson;
+    }
+
+    .menu li a {
+        color: white;
+    }
+
+    .menu li a:hover {
+        background-color: #fff;
+        color: black;
+        position: relative;
+        padding: 10px;
+    }
+    .footer-menu {
+        background-color: rgb(199, 19, 55);
+        margin-top: 500px;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        border: #fff 1px solid;
+    }
+    
+    .footer-menu a {
+        color: #fff;
+    
+    }
 }
 
-.menu {
-    display: flex;
-    flex-flow: wrap row;
-    color: white;
-    background-color: crimson;
-    gap: 20px;
+/* Responsive celulares */
+@media (max-width: 568px) {
+    .titulo{
+        background-color: crimson;
+        margin: 0px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .menu-hamburguesa{
+        display: flex;
+        flex-direction: column;
+        background-color: crimson;
+        align-items: center;
+        padding: 5px ;
+    }
+    .menu-hamburguesa p{
+        margin-bottom: 5px;
+    }
+    .menu-hamburguesa p a{
+        background-color: crimson;
+    }
+    .menu-hamburguesa div{
+        background-color: crimson;
+    }
+    .menu-hamburguesa .btn-primary {
+        background-color: crimson;
+        border-color: white;
+      }
+    .menu-hamburguesa .btn-primary:active {
+        background-color: white;
+        border-color: white;
+        color: black;
+    }
+    .menu {
+        display: flex;
+        flex-flow: wrap column;
+        color: white;
+        background-color: crimson;
+        border-color: crimson;
+
+    }
+
+    .menu li {
+        color: white;
+        padding: 10px;
+        background-color: crimson;
+    }
+
+    .menu li a {
+        display: block;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .menu li a:hover {
+        background-color: #fff;
+        color: black;
+        position: relative;
+        padding: 10px;
+    }
+    .tarjeta-web{
+        margin-bottom: 30px;
+    }
+    .tarjeta-python{
+        margin-bottom: 10px;
+    }
+    .footer-menu {
+        background-color: rgb(199, 19, 55);
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        border: #fff 1px solid;
+        margin-top: 280px;
+    }
+    
+    .footer-menu a {
+        color: #fff;
+    
+    }
 
 }
 
-.menu li {
-    color: white;
-    padding: 10px;
-    background-color: crimson;
-}
-
-.menu li a {
-    color: white;
-}
-
-.menu li a:hover {
-    background-color: #fff;
-    color: black;
-    position: relative;
-    padding: 10px;
-}
 
 /* ======================= MAIN ======================= */
 
 /* ---- CARRUSEL DE PROYECTOS ---- */
-/* Todavia no se hacer un carrusel asi que la imagen es representaviva. En un futuro cada imagen llevaria a su seccion en el apartado de proyectos del sitio web*/
+/* Falta conectar cada imagen del carrusel a la seccion de proyectos correspondiente.*/
 .carrusel {
     display: flex;
     flex-flow: wrap column;
@@ -75,8 +240,8 @@ header {
 .carrusel img {
     border: white 4px solid;
     border-radius: 15px;
-    height: 400px;
-    width: 650px;
+    height: 60vh;
+    width: 50vw;
     object-fit: cover;
     aspect-ratio: 16/9;
 }
@@ -147,21 +312,6 @@ h2 {
     justify-content: center;
     text-align: center;
     gap: 10px;
-}
-
-/* ======================= FOOTER ======================= */
-.footer-menu {
-    background-color: rgb(199, 19, 55);
-    margin-top: 500px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    border: #fff 1px solid;
-}
-
-.footer-menu a {
-    color: #fff;
-
 }
 
 /* Formulario */
