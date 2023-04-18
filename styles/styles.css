@@ -24,6 +24,88 @@ body {
 .menu-hamburguesa{
     display: none;
 }
+.carousel-inner{
+    width: 50vw;
+}
+/* Seccion proyectos */
+.biblioteca-titulo {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: crimson;
+    padding: 10px;
+}
+
+.proyectos {
+    display: flex;
+    flex-flow: column;
+    gap: 60px;
+    justify-content: center;
+}
+
+.proyecto1 {
+    width: 75%;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.proyecto1-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto1 h2 {
+    margin-bottom: 30px;
+    background-color: crimson;
+    border: 2px white solid;
+    margin-left: 5px;
+}
+
+.proyecto2 {
+    width: 75%;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.proyecto2-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto2 h2 {
+    margin-bottom: 30px;
+    background-color: crimson;
+    border: 2px white solid;
+    margin-left: 5px
+}
+
+.proyecto3 {
+    width: 75%;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.proyecto3-imagen {
+    width: 200px;
+    margin-left: 30px;
+    border: white 1px solid;
+    float: left;
+    margin-right: 10px;
+}
+
+.proyecto3 h2 {
+    margin-bottom: 30px;
+    background-color: crimson;
+    border: 2px white solid;
+    margin-left: 5px
+}
 /* Responsive computadoras */
 
 @media (min-width: 960px) {
@@ -200,6 +282,9 @@ body {
         position: relative;
         padding: 10px;
     }
+    .servicios{
+        gap: 20px;
+    }
     .tarjeta-web{
         margin-bottom: 30px;
     }
@@ -220,6 +305,59 @@ body {
     
     }
 
+     /*Carrusel*/
+     .carrusel div .carousel-inner{
+        width: 75vw;
+     }
+     /* Seccion proyectos */
+    .biblioteca-titulo {
+        margin-top: 100px;
+    }
+    .proyectos{
+        align-items: center;
+    }
+    .proyectos h2{
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .proyecto1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .proyecto1-imagen{
+        margin: 0px;
+    }
+    .proyecto1 p{
+        margin-top: 10px;
+    }
+    .proyecto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .proyecto2-imagen{
+        margin: 0px;
+    }
+    .proyecto2 p{
+        margin-top: 10px;
+    }
+    .proyecto3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .proyecto3-imagen{
+        margin: 0px;
+    }
+    .proyecto3 p{
+        margin-top: 10px;
+    }
+    
+
 }
 
 
@@ -227,12 +365,15 @@ body {
 
 /* ---- CARRUSEL DE PROYECTOS ---- */
 /* Falta conectar cada imagen del carrusel a la seccion de proyectos correspondiente.*/
+.carrusel-titulo{
+    margin-top: 100px;
+}
 .carrusel {
     display: flex;
     flex-flow: wrap column;
     justify-content: space-between;
     align-content: center;
-    margin-top: 175px;
+    margin-top: 20px;
     gap: 10px;
     font-size: 0.8em;
 }
@@ -256,6 +397,7 @@ h2 {
     flex-flow: wrap row;
     justify-content: space-evenly;
     align-content: center;
+    gap: 30px;
 }
 
 .servicios-titulo {
@@ -356,73 +498,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #006080;
-}
-
-/* Seccion proyectos */
-.biblioteca-titulo {
-    display: flex;
-    margin-top: 200px;
-    justify-content: center;
-    margin-bottom: 100px;
-    background-color: crimson;
-    padding: 10px;
-}
-
-.proyectos {
-    display: flex;
-    flex-flow: column;
-    gap: 60px;
-}
-
-.proyecto1 {
-    width: 75%;
-    text-align: justify;
-}
-
-.proyecto1-imagen {
-    width: 200px;
-    margin-left: 30px;
-    border: white 1px solid;
-    float: left;
-    margin-right: 10px;
-}
-
-.proyecto1 h2 {
-    margin-bottom: 30px;
-}
-
-.proyecto2 {
-    width: 75%;
-    text-align: justify;
-}
-
-.proyecto2-imagen {
-    width: 200px;
-    margin-left: 30px;
-    border: white 1px solid;
-    float: left;
-    margin-right: 10px;
-}
-
-.proyecto2 h2 {
-    margin-bottom: 30px;
-}
-
-.proyecto3 {
-    width: 75%;
-    text-align: justify;
-}
-
-.proyecto3-imagen {
-    width: 200px;
-    margin-left: 30px;
-    border: white 1px solid;
-    float: left;
-    margin-right: 10px;
-}
-
-.proyecto3 h2 {
-    margin-bottom: 30px;
 }
 
 /* Testimonios */
@@ -613,3 +688,5 @@ button[type="submit"]:hover {
 .perfil-laboral h2 {
     margin-bottom: 50px;
 }
+
+/*To do: hacer responsives las demas secciones - mejorar el carrusel del home agregandole links y descripciones breves del proyecto - mejorar la seccion de testimonios*/
