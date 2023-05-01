@@ -48,30 +48,69 @@
     </div>
   </header>
   <main>
-    <section class="formulario-contactos">
-      <form>
-        <div>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div>
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" required>
-        </div>
-        <div>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-        </div>
-        <div>
-          <label for="email">Tu email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form action="enviar-mensaje.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+    
+        <button type="submit">Enviar mensaje</button>
       </form>
-
-
+    
+      <div class="informacion-contacto">
+        <h3>Información de contacto</h3>
+        <div class="wpp">
+          <img src="../images/wplogo.png" alt=""><p> Teléfono: <a href="https://wa.me/543416959913" target="_blank">+(54) 3416959913</a></p>
+        </div>
+        <div class="gmail">
+        <img src="../images/logogmail.png" alt=""><p> Correo electrónico: <a href="mailto:ridao.patricio01@gmail.com">ridao.patricio01@gmail.com</a></p>
+        </div>
+        <div class="insta">
+          <img src="../images/logoinsta.png" alt="" class="logoinsta"><p><i class="fab fa-twitter"></i> Instagram: <a href="https://www.instagram.com/patricioridao/" target=”_blank”>@patricioridao</a></p>
+        </div>
+        <div class="github">
+        <img src="../images/gitlogo.png" alt=""><p>Github <a href="https://github.com/neonidus1" target="_blank">https://github.com/neonidus1</a></p>
+        </div>
+      </div>
+    
+      <div class="horario-atencion">
+        <h3>Horario de atención</h3>
+        <p>Lunes a Viernes: 09:00 am - 22:00 pm</p>
+        <p>Sábados: 09:00 am - 24:00 pm</p>
+      </div>
+    
+      <div class="preguntas-frecuentes">
+        <h3>Preguntas frecuentes</h3>
+        <details>
+          <summary>¿Cuál es el tiempo de respuesta para los mensajes de contacto?</summary>
+          <p>No mas de 24 horas. Siempre intento estar al tanto de los mensajes y solicitudes entrantes.</p>
+        </details>
+        <details>
+          <summary>¿Haces diseños responsives?</summary>
+          <p>Si, hago diseños responsives a pedido. Esto incluye proyectos nuevos o ya existentes.</p>
+        </details>
+        <details>
+          <summary>¿Qué tipo de clientes has tenido en el pasado y cuál fue el resultado de su proyecto?</summary>
+          <p>En general todo tipo de clientes, en la seccion de Testimonials esta la lista de estos con sus respectivas opiniones</p>
+        </details>
+        <details>
+          <summary></summary>
+        </details>
+      </div>
+    
+      <div class="llamado-a-la-accion">
+        <h3>¿Listo para comenzar?</h3>
+        <p>Contáctame hoy para comenzar tu proyecto de desarrollo web.</p>
+        <a href="contacto.html" class="boton-cta">Contáctanos</a>
+      </div>
+    </section>
+    
   </main>
   <footer>
     <div class="footer-menu">
