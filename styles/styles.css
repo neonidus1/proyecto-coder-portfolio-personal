@@ -43,25 +43,25 @@ h2 {
   align-items: center;
 }
 
-.proyecto1,
-.proyecto2,
-.proyecto3 {
+.proyecto-calc,
+.proyecto-oraculo,
+.proyecto-js {
   width: 75%;
   text-align: justify;
   margin-left: 10px;
 }
-.proyecto1 h2,
-.proyecto2 h2,
-.proyecto3 h2 {
+.proyecto-calc h2,
+.proyecto-oraculo h2,
+.proyecto-js h2 {
   margin-bottom: 30px;
   background-color: crimson;
   border: 2px white solid;
   margin-left: 5px;
 }
 
-.proyecto1-imagen,
-.proyecto2-imagen,
-.proyecto3-imagen {
+.proyecto-calc-imagen,
+.proyecto-oraculo-imagen,
+.proyecto-js-imagen {
   width: 200px;
   margin-left: 30px;
   border: white 1px solid;
@@ -83,44 +83,44 @@ h2 {
     margin-left: 0px;
     padding: 5px;
   }
-  .proyecto1 {
+  .proyecto-calc {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
   }
-  .proyecto1 p {
+  .proyecto-calc p {
     margin-top: 10px;
   }
-  .proyecto1-imagen {
+  .proyecto-calc-imagen {
     width: 55vw;
     margin: 0px;
     margin-bottom: 8px;
   }
-  .proyecto2 {
+  .proyecto-oraculo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
   }
-  .proyecto2 p {
+  .proyecto-oraculo p {
     margin-top: 10px;
   }
-  .proyecto2-imagen {
+  .proyecto-oraculo-imagen {
     width: 55vw;
     margin: 0px;
     margin-bottom: 8px;
   }
-  .proyecto3 {
+  .proyecto-js {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
   }
-  .proyecto3 p {
+  .proyecto-js p {
     margin-top: 10px;
   }
-  .proyecto3-imagen {
+  .proyecto-js-imagen {
     width: 55vw;
     margin: 0px;
     margin-bottom: 8px;
@@ -604,6 +604,7 @@ header h2 {
   border-radius: 50%;
   border: 3px white solid;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 .testimonio img:hover {
   animation: pulse;
@@ -623,6 +624,7 @@ header h2 {
 .testimonio cite {
   background-color: rgb(218, 52, 85);
   padding: 5px;
+  margin-top: 10px;
 }
 
 /* Responsive */
@@ -637,9 +639,12 @@ header h2 {
     margin: 20px 0;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .testimonio img {
-    margin: 0 auto;
     display: block;
   }
   .testimonio p {

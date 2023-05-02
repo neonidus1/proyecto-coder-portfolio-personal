@@ -12,6 +12,7 @@
         border-radius: 50%;
         border: 3px white solid;
         margin-right: 20px;
+        margin-bottom: 10px;
         &:hover{
             animation: pulse; 
             animation-duration: 1s;
@@ -31,6 +32,7 @@
     cite{
         background-color: rgb(218, 52, 85);
         padding: 5px;
+        margin-top: 10px;
     }    
     }
     
@@ -48,10 +50,13 @@
     margin: 20px 0;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
     
     .testimonio img {
-    margin: 0 auto;
     display: block;
     }
     
