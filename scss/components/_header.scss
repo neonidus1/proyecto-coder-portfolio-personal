@@ -1,0 +1,139 @@
+.menu-hamburguesa{
+    display: none;
+}
+
+header{
+    h2{
+        display: none;
+    }
+}
+/*Responsive computadoras*/
+@media (min-width: $breakpoint-pc)   {
+    
+    .nav-bar {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        background-color: crimson;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: wrap row;
+        color: white;
+        background-color: crimson;
+        gap: 20px;
+        li{
+            color: white;
+            padding: 10px;
+            background-color: crimson;
+            a{
+                color: $color-letra-base;
+                &:hover{
+                    background-color: #fff;
+                    color: black;
+                    position: relative;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+/*Responsive tablet*/
+@media (min-width: $breakpoint-mobile){
+    .nav-bar {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+        background-color: crimson;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: wrap row;
+        color: white;
+        background-color: crimson;
+        gap: 20px;
+        li {
+            color: white;
+            padding: 10px;
+            background-color: crimson;
+            a {
+                color: white;
+                &:hover{
+                    background-color: #fff;
+                    color: black;
+                    position: relative;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+/*Responsive mobile*/
+@media (max-width: $breakpoint-mobile){
+    .titulo{
+        display: block;
+        background-color: crimson;
+        margin: 0px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .menu-hamburguesa{
+        display: flex;
+        flex-direction: column;
+        background-color: crimson;
+        align-items: center;
+        padding: 5px ;
+        div{
+            background-color: crimson;
+        }
+        p{
+            margin-bottom: 5px;
+            a{
+                background-color: crimson;
+            }
+        }
+    }
+    .menu-hamburguesa .btn-primary {
+        background-color: crimson;
+        border-color: white;
+        &:active{
+            background-color: white;
+            border-color: white;
+            color: black;
+        }
+      }
+    .menu {
+        display: flex;
+        flex-flow: wrap column;
+        color: white;
+        background-color: crimson;
+        border-color: crimson;
+        li {
+            color: white;
+            padding: 10px;
+            background-color: crimson;
+            a {
+                display: block;
+                color: white;
+                border-radius: 2px;
+                &:hover{        background-color: #fff;
+                    color: black;
+                    position: relative;
+                    padding: 10px;}
+            }
+        }
+    }
+}

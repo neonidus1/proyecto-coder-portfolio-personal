@@ -1,0 +1,29 @@
+.servicios {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 300px;
+}
+.section-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicios-titulo {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: crimson;
+    border: white 1px solid;
+    width: 30vw;
+}
+@media (min-width:$breakpoint-mobile){
+    .servicios{
+        gap: 100px;
+    }
+}
+@media (max-width:$breakpoint-mobile){
+    .servicios{
+        gap: 50px;
+    }
+}

@@ -1,0 +1,40 @@
+.form-contacto{
+    width: 80vw;
+    max-width: 500px;
+    margin: 0 auto;
+    input,textarea{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    input:focus,textarea:focus {
+        outline: none;
+        border: 2px solid crimson;
+    }
+}
+.contacto {
+    background-color:  rgb(12, 12, 12);
+    color: #fff;
+    padding: 80px 0;
+    h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    button[type="submit"] {
+        background-color: crimson;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 12px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        &:hover {
+            background-color: #a30c0c;
+        }
+    }
+}

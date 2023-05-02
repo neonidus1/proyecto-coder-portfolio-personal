@@ -1,0 +1,49 @@
+
+.info-personal {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: nowrap row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.descargar-cv{
+    display: none;
+}
+.cv  {
+    iframe{
+        height: 480px;
+        width: 300px;
+    }
+}
+
+.perfil-laboral {
+    width: 30%;
+    h2 {
+        background-color: crimson;
+        margin-bottom: 50px;
+        border: 1px solid white;
+    }
+}
+/*Responsive mobile*/
+@media (max-width:$breakpoint-mobile){
+    .info-personal{
+        flex-direction: column;
+        align-items: center;
+        .perfil-laboral{
+            width: 90%;
+        }
+    }
+    .cv{
+        display: none;
+    }
+    .descargar-cv{
+        display: block;
+        background-color: crimson;
+        padding: 10px;
+        border: white 1px solid;
+        a{
+            color: white;
+            font-size: 1em;
+        }
+    }
+}

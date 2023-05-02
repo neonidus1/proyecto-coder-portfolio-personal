@@ -1,0 +1,32 @@
+/* Reseteo de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Declaracion de variables*/
+$color-fondo: rgb(12, 12, 12);
+$color-letra-base: #fff;
+$fuente-base: 'Roboto', sans-serif;
+
+$breakpoint-mobile: 600px;
+$breakpoint-pc: 960px;
+
+/*Estilos generales*/
+body{
+    background-color: $color-fondo;
+    color: $color-letra-base;
+    font-family: $fuente-base;
+}
+h2 {
+    text-align: center;
+}

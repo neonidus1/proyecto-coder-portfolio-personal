@@ -1,0 +1,54 @@
+/*Tarjeta desarrollo web*/
+
+.tarjeta-web {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    div {
+        height: 35%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    animation: fadeInLeft;
+    animation-duration: 3s;
+
+}
+
+.tarjeta-web-img {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+/*Tarjeta programacion en python*/
+
+
+.tarjeta-python {
+    background-color: crimson;
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    div {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+    animation: fadeInRight;
+    animation-duration: 3s;
+}
+.tarjeta-python-img {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
