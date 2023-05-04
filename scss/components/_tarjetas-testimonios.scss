@@ -13,6 +13,7 @@
         border: 3px white solid;
         margin-right: 20px;
         margin-bottom: 10px;
+        object-fit: cover;
         &:hover{
             animation: pulse; 
             animation-duration: 1s;
@@ -34,6 +35,9 @@
         padding: 5px;
         margin-top: 10px;
     }    
+    }
+    .claudia-img{
+        object-position: top;
     }
     
     /* Responsive */

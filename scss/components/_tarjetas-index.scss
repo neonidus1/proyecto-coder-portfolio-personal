@@ -16,6 +16,10 @@
     }
     animation: fadeInLeft;
     animation-duration: 3s;
+    p{
+        padding-inline: 1em;
+        padding-bottom: 1em;
+    }
 
 }
 
@@ -43,6 +47,9 @@
     }
     animation: fadeInRight;
     animation-duration: 3s;
+    p{
+        padding-inline: 1em;
+    }
 }
 .tarjeta-python-img {
     width: 50%;

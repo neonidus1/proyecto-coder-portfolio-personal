@@ -235,6 +235,24 @@ h2 {
   color: crimson;
 }
 
+/*Responsive*/
+@media (max-width: 600px) {
+  .horario-atencion,
+  .llamado-a-la-accion {
+    text-align: center;
+    padding-inline: 10px;
+  }
+  .preguntas-frecuentes {
+    padding-left: 10px;
+  }
+  .preguntas-frecuentes h3 {
+    text-align: center;
+  }
+  .informacion-contacto {
+    padding-inline: 10px;
+    text-align: center;
+  }
+}
 .info-personal {
   margin-top: 50px;
   display: flex;
@@ -493,6 +511,10 @@ header h2 {
   justify-content: center;
   text-align: center;
 }
+.tarjeta-web p {
+  padding-inline: 1em;
+  padding-bottom: 1em;
+}
 
 .tarjeta-web-img {
   width: 100%;
@@ -517,6 +539,9 @@ header h2 {
   justify-content: center;
   text-align: center;
   gap: 10px;
+}
+.tarjeta-python p {
+  padding-inline: 1em;
 }
 
 .tarjeta-python-img {
@@ -605,6 +630,7 @@ header h2 {
   border: 3px white solid;
   margin-right: 20px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 .testimonio img:hover {
   animation: pulse;
@@ -625,6 +651,10 @@ header h2 {
   background-color: rgb(218, 52, 85);
   padding: 5px;
   margin-top: 10px;
+}
+
+.claudia-img {
+  object-position: top;
 }
 
 /* Responsive */
