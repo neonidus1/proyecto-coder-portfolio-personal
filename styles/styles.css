@@ -45,14 +45,16 @@ h2 {
 
 .proyecto-calc,
 .proyecto-oraculo,
-.proyecto-js {
+.proyecto-js,
+.portfolio-personal {
   width: 75%;
   text-align: justify;
   margin-left: 10px;
 }
 .proyecto-calc h2,
 .proyecto-oraculo h2,
-.proyecto-js h2 {
+.proyecto-js h2,
+.portfolio-personal h2 {
   margin-bottom: 30px;
   background-color: crimson;
   border: 2px white solid;
@@ -61,7 +63,8 @@ h2 {
 
 .proyecto-calc-imagen,
 .proyecto-oraculo-imagen,
-.proyecto-js-imagen {
+.proyecto-js-imagen,
+.portfolio-personal-imagen {
   width: 200px;
   margin-left: 30px;
   border: white 1px solid;
@@ -605,6 +608,8 @@ header h2 {
   border: 3px white solid;
   margin-right: 20px;
   margin-bottom: 10px;
+  object-fit: cover;
+  object-position: top;
 }
 .testimonio img:hover {
   animation: pulse;

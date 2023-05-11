@@ -13,6 +13,8 @@
         border: 3px white solid;
         margin-right: 20px;
         margin-bottom: 10px;
+        object-fit: cover;
+        object-position: top;
         &:hover{
             animation: pulse; 
             animation-duration: 1s;
