@@ -71,3 +71,22 @@
 ::marker{
     color: crimson;
 } 
+
+/*Responsive*/
+@media (max-width:$breakpoint-mobile){
+    .horario-atencion,
+    .llamado-a-la-accion{
+        text-align: center;
+        padding-inline: 10px;
+    }
+    .preguntas-frecuentes{
+        h3{
+            text-align: center;
+        }
+        padding-left: 10px;
+    }
+    .informacion-contacto{
+        padding-inline: 10px;
+        text-align: center;
+    }
+}
