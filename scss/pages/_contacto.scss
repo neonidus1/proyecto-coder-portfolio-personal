@@ -1,4 +1,14 @@
-
+.contacto-titulo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contacto-titulo h2 {
+    display: inline-block;
+    background-color: crimson;
+    padding-inline: 100px;
+    border: 2px solid white;
+  }
 .informacion-contacto a{
     text-decoration: none;
     color: crimson
@@ -88,5 +98,10 @@
     .informacion-contacto{
         padding-inline: 10px;
         text-align: center;
+    }
+    .contacto-titulo h2 {
+        display: inline-block;
+        background-color: crimson;
+        padding-inline: 50px;
     }
 }

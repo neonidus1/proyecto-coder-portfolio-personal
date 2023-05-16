@@ -1,5 +1,9 @@
   
   .testimonio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: crimson;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,14 +31,19 @@
     p {
         font-size: 1em;
         margin: 0;
-        margin-top: 10px;
         background-color: rgba(12, 12, 12, 0.425);
-        padding: 5px;
+        padding: 8px;
+        border-radius: 8px;
         }
-    cite{
+    figcaption{
+        display: inline;
         background-color: rgb(218, 52, 85);
-        padding: 5px;
+        padding: 8px;
         margin-top: 10px;
+        width: auto;
+        height: fit-content;
+        font-style: italic;
+        border-radius: 8px;
     }    
     }
     .claudia-img{
@@ -42,7 +51,16 @@
     }
     
     /* Responsive */
-    
+    @media only screen and (max-width: 1100px) {
+        .testimonio {
+            flex-flow: column;
+            justify-content: center;
+            p{
+                margin-top: 20px;
+            }
+            text-align: center;
+        }
+    }
     @media only screen and (max-width: $breakpoint-mobile) {
     .testimonios {
     flex-flow: wrap column;
